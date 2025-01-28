@@ -14,10 +14,6 @@ CREATE TABLE Cliente (
 
 ); 
 
- 
-
- 
-
 CREATE TABLE Usuario ( 
 
     Id INT PRIMARY KEY IDENTITY(1,1), -- Chave primária 
@@ -34,18 +30,14 @@ CREATE TABLE Usuario (
 
 ); 
 
- 
-
- 
-
-CREATE TABLE Categorias ( 
+CREATE TABLE Categoria ( 
     Id INT PRIMARY KEY IDENTITY, 
     Nome NVARCHAR(100) NOT NULL, 
     Descricao NVARCHAR(255), 
     SoftDelete BIT DEFAULT 0 
 ); 
  
-CREATE TABLE Produtos ( 
+CREATE TABLE Produto ( 
     Id INT PRIMARY KEY IDENTITY, 
     Nome NVARCHAR(100) NOT NULL, 
     Descricao NVARCHAR(255), 
@@ -54,8 +46,6 @@ CREATE TABLE Produtos (
     QuantidadeEstoque INT NOT NULL, 
     SoftDelete BIT DEFAULT 0 
 ); 
-
- 
 
 CREATE TABLE Venda ( 
 
@@ -70,8 +60,6 @@ CREATE TABLE Venda (
     SoftDelete BIT DEFAULT 0 -- SoftDelete 
 
 ); 
-
-  
 
 CREATE TABLE ItemVenda ( 
 
@@ -89,7 +77,6 @@ CREATE TABLE ItemVenda (
 
 ); 
 
- 
 CREATE TABLE MovimentacoesEstoque ( 
     Id INT PRIMARY KEY IDENTITY, 
     ProdutoId INT NOT NULL FOREIGN KEY REFERENCES Produtos(Id), 
