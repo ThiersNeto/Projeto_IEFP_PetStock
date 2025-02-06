@@ -1,3 +1,8 @@
+CREATE DATABASE PetStock;
+GO
+
+USE PetStock;
+
 CREATE TABLE Cliente (
     Id INT PRIMARY KEY IDENTITY(1,1),-- Chave primária
     Nome NVARCHAR(100) NOT NULL,-- Nome do cliente
