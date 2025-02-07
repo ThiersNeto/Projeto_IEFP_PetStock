@@ -1,3 +1,6 @@
+using System.Collections.ObjectModel;
+using Microsoft.VisualBasic;
+
 namespace PetStock.Library.Models;
 
 /**
@@ -5,8 +8,10 @@ namespace PetStock.Library.Models;
  */
 public class Category
 {
-     public int Id { get; set; }
+     public int CategoryId { get; set; }
      public string Name { get; set; }
-     public bool IsDeleted { get; set; } = false;
-     public List<Product> Products { get; set; } = new List<Product>();
+     public string IconCSS { get; set; }
+     
+     public Collection<Product> Products { get; set; } 
+          = new Collection<Product>();
 }
