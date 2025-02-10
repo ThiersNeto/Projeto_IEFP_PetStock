@@ -12,10 +12,14 @@ CREATE TABLE [Client] (
     [Address] NVARCHAR(255),
     [RegistrationDate] DATETIME DEFAULT GETDATE()
 )
+GO
+
 CREATE TABLE [UserRole] (
     [Id] INT PRIMARY KEY IDENTITY(1,1),
     [Name] NVARCHAR(100) NOT NULL,
 )
+GO
+
 CREATE TABLE [User] (
     [Id] INT PRIMARY KEY IDENTITY(1,1),
     [Name] NVARCHAR(100) NOT NULL,
@@ -24,11 +28,15 @@ CREATE TABLE [User] (
     [PasswordHash] NVARCHAR(255) NOT NULL,
     [RegistrationDate] DATETIME DEFAULT GETDATE(),
 )
+GO
+
 CREATE TABLE [Category] (
     [Id] INT PRIMARY KEY IDENTITY,
     [Name] NVARCHAR(100) NOT NULL,
     [SoftDelete] BIT DEFAULT 0 
 )
+GO
+
 CREATE TABLE [Product] (
     [Id] INT PRIMARY KEY IDENTITY,
     [Name] NVARCHAR(100) NOT NULL,
@@ -38,6 +46,8 @@ CREATE TABLE [Product] (
     [StockQuantity] INT NOT NULL,
     [SoftDelete] BIT DEFAULT 0
 )
+GO
+
 CREATE TABLE [Sale] ( 
     [Id] INT PRIMARY KEY IDENTITY(1,1),
     [ClientId] INT FOREIGN KEY REFERENCES [Client](Id),
@@ -45,6 +55,8 @@ CREATE TABLE [Sale] (
     [Total] DECIMAL(10,2) NOT NULL,
     [SoftDelete] BIT DEFAULT 0
 )
+GO
+
 CREATE TABLE [SaleItem] ( 
     [Id] INT PRIMARY KEY IDENTITY(1,1),
     [SaleId] INT NOT NULL FOREIGN KEY REFERENCES [Sale](Id),
@@ -53,6 +65,8 @@ CREATE TABLE [SaleItem] (
     [UnitPrice] DECIMAL(10,2) NOT NULL,
     [Subtotal] AS (Quantity * UnitPrice) PERSISTED
 )
+GO
+
 CREATE TABLE [StockTransaction] ( 
     [Id] INT PRIMARY KEY IDENTITY,
     [ProductId] INT NOT NULL FOREIGN KEY REFERENCES [Product](Id),
