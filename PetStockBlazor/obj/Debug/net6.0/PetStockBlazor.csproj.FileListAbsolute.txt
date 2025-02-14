@@ -1,0 +1,9 @@
+C:\Users\DELL\source\repos\ProjetoIEFP_PetStock\PetStockBlazor\obj\Debug\net6.0\PetStockBlazor.csproj.AssemblyReference.cache
+C:\Users\DELL\source\repos\ProjetoIEFP_PetStock\PetStockBlazor\obj\Debug\net6.0\PetStockBlazor.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\DELL\source\repos\ProjetoIEFP_PetStock\PetStockBlazor\obj\Debug\net6.0\PetStockBlazor.AssemblyInfoInputs.cache
+C:\Users\DELL\source\repos\ProjetoIEFP_PetStock\PetStockBlazor\obj\Debug\net6.0\PetStockBlazor.AssemblyInfo.cs
+C:\Users\DELL\source\repos\ProjetoIEFP_PetStock\PetStockBlazor\obj\Debug\net6.0\PetStockBlazor.csproj.CoreCompileInputs.cache
+C:\Users\DELL\source\repos\ProjetoIEFP_PetStock\PetStockBlazor\obj\Debug\net6.0\PetStockBlazor.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\DELL\source\repos\ProjetoIEFP_PetStock\PetStockBlazor\obj\Debug\net6.0\PetStockBlazor.RazorAssemblyInfo.cache
+C:\Users\DELL\source\repos\ProjetoIEFP_PetStock\PetStockBlazor\obj\Debug\net6.0\PetStockBlazor.RazorAssemblyInfo.cs
+C:\Users\DELL\source\repos\ProjetoIEFP_PetStock\PetStockBlazor\obj\Debug\net6.0\PetStockBlazor.sourcelink.json
