@@ -1,0 +1,40 @@
+﻿@page "/products"
+@using PetStockBlazor.Data
+@using PetStockBlazor.Models
+@inject AppDbContext _context
+
+<h3>ProductList</h3>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>ID</th>
+            <th>Nome</th>
+            <th>Descrição</th>
+            <th>Preço</th>
+            <th>Estoque</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var product in products)
+        {
+            <tr>
+                <td>@product.Id</td>
+                <td>@product.Name</td>
+                <td>@product.Description</td>
+                <td>@product.Price</td>
+                <td>@product.StockQuantity</td>
+            </tr>
+        }
+    </tbody>
+</table>
+
+
+@code {
+    private List<Product> products = new();
+
+    protected override async Task OnInitializedAsync()
+    {
+        products = await _context.Products.ToListAsync();
+    }
+}
