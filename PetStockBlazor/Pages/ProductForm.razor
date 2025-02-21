@@ -1,12 +1,13 @@
 ﻿@page "/add-product"
-@using PetStockBlazor.Data
+@using Microsoft.AspNetCore.Components.Forms
+@using PetStockBlazor.Services
 @using PetStockBlazor.Models
-@inject AppDbContext _context
 @inject NavigationManager Navigation
+@inject FakeDataService DataService
 
 <h3>ProductForm</h3>
 
-<EditForm Model="product" OnValidSubmit="SaveProduct">
+<EditForm Model="@product" OnValidSubmit="SaveProduct">
     <DataAnnotationsValidator />
     <ValidationSummary />
 
@@ -30,16 +31,34 @@
         <InputNumber class="form-control" @bind-Value="product.StockQuantity" />
     </div>
 
-    <button type="submit" class="btn btn-primary">Salvar</button>
+    <div class="mb-3">
+        <label>Category</label>
+        <select @bind="product.CategoryId" class="form-control">
+            @foreach (var category in categories)
+            {
+                <option value="@category.Id">@category.Name</option>
+            }
+        </select>
+    </div>
+
+    <button type="submit" class="btn btn-primary">Save</button>
 </EditForm>
 
 @code {
     private Product product = new();
 
-    private async Task SaveProduct()
+    private List<Category> categories = new();
+
+    protected override void OnInitialized()
     {
-        _context.Products.Add(product);
-        await _context.SaveChangesAsync();
+        categories = DataService.GetCategories();
+    }
+
+    private void SaveProduct()
+    {
+        product.Category = categories.FirstOrDefault(c => c.Id == product.CategoryId);
+        DataService.AddProduct(product);
         Navigation.NavigateTo("/products");
     }
+
 }

@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("PetStockBlazor")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+d99f6f428eff2ed4751c07217941df96b9e032de")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+84bfb1a84023271a6165430bf8a6104401f7e643")]
 [assembly: System.Reflection.AssemblyProductAttribute("PetStockBlazor")]
 [assembly: System.Reflection.AssemblyTitleAttribute("PetStockBlazor")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

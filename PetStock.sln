@@ -1,13 +1,13 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
-VisualStudioVersion = 17.12.35707.178 d17.12
+VisualStudioVersion = 17.12.35707.178
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PetStock.Client", "PetStock.Client\PetStock.Client.csproj", "{360BD74B-9F46-4A9B-A47F-3F247251B1B3}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PetStock.API", "PetStock.API\PetStock.API.csproj", "{F043C5D6-F577-4A51-8D46-4DACFF3E9E8E}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PetStock.Library", "PetStock.Library\PetStock.Library.csproj", "{C85E511E-98E9-4276-920B-7E6891AA8903}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PetStock.WebAPI", "PetStock API\PetStock.WebAPI.csproj", "{242A9E25-33BC-4060-BBF5-97024F67F6DF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PetStockBlazor", "PetStockBlazor\PetStockBlazor.csproj", "{671EDC0B-E3D5-4FF8-84CC-DA5D006859CE}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,18 +15,18 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{360BD74B-9F46-4A9B-A47F-3F247251B1B3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{360BD74B-9F46-4A9B-A47F-3F247251B1B3}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{360BD74B-9F46-4A9B-A47F-3F247251B1B3}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{360BD74B-9F46-4A9B-A47F-3F247251B1B3}.Release|Any CPU.Build.0 = Release|Any CPU
-		{F043C5D6-F577-4A51-8D46-4DACFF3E9E8E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{F043C5D6-F577-4A51-8D46-4DACFF3E9E8E}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{F043C5D6-F577-4A51-8D46-4DACFF3E9E8E}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{F043C5D6-F577-4A51-8D46-4DACFF3E9E8E}.Release|Any CPU.Build.0 = Release|Any CPU
 		{C85E511E-98E9-4276-920B-7E6891AA8903}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{C85E511E-98E9-4276-920B-7E6891AA8903}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C85E511E-98E9-4276-920B-7E6891AA8903}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C85E511E-98E9-4276-920B-7E6891AA8903}.Release|Any CPU.Build.0 = Release|Any CPU
+		{242A9E25-33BC-4060-BBF5-97024F67F6DF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{242A9E25-33BC-4060-BBF5-97024F67F6DF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{242A9E25-33BC-4060-BBF5-97024F67F6DF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{242A9E25-33BC-4060-BBF5-97024F67F6DF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{671EDC0B-E3D5-4FF8-84CC-DA5D006859CE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{671EDC0B-E3D5-4FF8-84CC-DA5D006859CE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{671EDC0B-E3D5-4FF8-84CC-DA5D006859CE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{671EDC0B-E3D5-4FF8-84CC-DA5D006859CE}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

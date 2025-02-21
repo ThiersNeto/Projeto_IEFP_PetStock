@@ -12,10 +12,10 @@ namespace PetStockBlazor.Models
         public int ProductId { get; set; }
 
         [ForeignKey("ProductId")]
-        public Product Product { get; set; }
+        public Product? Product { get; set; }
 
         [Required, StringLength(10)]
-        public string Type { get; set; } // 'Entrance' ou 'Exit'
+        public string Type { get; set; } = string.Empty;// 'Entrance' ou 'Exit'
 
         [Required]
         public int Quantity { get; set; }
