@@ -51,7 +51,88 @@ namespace PetStockBlazor.Services
             stockMovements = new List<StockMovement>
             {
                 new StockMovement { ProductId = 1, Quantity = 5, Type = "Entrada", Description = "Compra de fornecedores", Date = DateTime.Now.AddDays(-10) },
+                new StockMovement { ProductId = 1, Quantity = 5, Type = "Entrada", Description = "Compra de fornecedores", Date = DateTime.Now.AddDays(-10) },
+                new StockMovement { ProductId = 1, Quantity = 3, Type = "Saída", Description = "Venda para cliente João Silva", Date = DateTime.Now.AddDays(-8) },
+                new StockMovement { ProductId = 1, Quantity = 4, Type = "Entrada", Description = "Reposição de estoque", Date = DateTime.Now.AddDays(-6) },
+                new StockMovement { ProductId = 1, Quantity = 2, Type = "Saída", Description = "Venda para cliente Maria Oliveira", Date = DateTime.Now.AddDays(-4) },
+                new StockMovement { ProductId = 1, Quantity = 1, Type = "Saída", Description = "Ajuste de estoque - Produto danificado", Date = DateTime.Now.AddDays(-2) },
 
+                // Ração Para Cão Sênior
+                 new StockMovement { ProductId = 2, Quantity = 7, Type = "Entrada", Description = "Compra de fornecedores", Date = DateTime.Now.AddDays(-9) },
+                 new StockMovement { ProductId = 2, Quantity = 5, Type = "Saída", Description = "Venda para cliente Maria Oliveira", Date = DateTime.Now.AddDays(-7) },
+                 new StockMovement { ProductId = 2, Quantity = 3, Type = "Entrada", Description = "Reposição de estoque", Date = DateTime.Now.AddDays(-5) },
+                 new StockMovement { ProductId = 2, Quantity = 2, Type = "Saída", Description = "Venda para cliente João Silva", Date = DateTime.Now.AddDays(-3) },
+                 new StockMovement { ProductId = 2, Quantity = 1, Type = "Saída", Description = "Ajuste de estoque - Produto danificado", Date = DateTime.Now.AddDays(-1) },
+
+                 // Movimentações Cão Júnior
+                 new StockMovement { ProductId = 3, Quantity = 10, Type = "Entrada", Description = "Compra de fornecedores", Date = DateTime.Now.AddDays(-12) },
+                 new StockMovement { ProductId = 3, Quantity = 5, Type = "Saída", Description = "Venda para cliente João Silva", Date = DateTime.Now.AddDays(-10) },
+                 new StockMovement { ProductId = 3, Quantity = 5, Type = "Saída", Description = "Venda para cliente João Silva", Date = DateTime.Now.AddDays(-10) },
+                 new StockMovement { ProductId = 3, Quantity = 3, Type = "Saída", Description = "Venda para cliente Maria Oliveira", Date = DateTime.Now.AddDays(-6) },
+                 new StockMovement { ProductId = 3, Quantity = 2, Type = "Saída", Description = "Ajuste de estoque - Produto vencido", Date = DateTime.Now.AddDays(-4) },
+
+                 // Osso de Borracha
+                 new StockMovement { ProductId = 4, Quantity = 15, Type = "Entrada", Description = "Compra de fornecedores", Date = DateTime.Now.AddDays(-5) },
+                 new StockMovement { ProductId = 4, Quantity = 8, Type = "Saída", Description = "Venda para cliente Maria Oliveira", Date = DateTime.Now.AddDays(-4) },
+                 new StockMovement { ProductId = 4, Quantity = 6, Type = "Entrada", Description = "Reposição de estoque", Date = DateTime.Now.AddDays(-3) },
+                 new StockMovement { ProductId = 4, Quantity = 4, Type = "Saída", Description = "Venda para cliente João Silva", Date = DateTime.Now.AddDays(-2) },
+                 new StockMovement { ProductId = 4, Quantity = 3, Type = "Saída", Description = "Ajuste de estoque - Produto danificado", Date = DateTime.Now.AddDays(-1) },
+
+                 //Disco para Cão
+                 new StockMovement { ProductId = 5, Quantity = 10, Type = "Entrada", Description = "Compra de fornecedores", Date = DateTime.Now.AddDays(-6) },
+                 new StockMovement { ProductId = 5, Quantity = 4, Type = "Saída", Description = "Venda para cliente João Silva", Date = DateTime.Now.AddDays(-5) },
+                 new StockMovement { ProductId = 5, Quantity = 6, Type = "Entrada", Description = "Reposição de estoque", Date = DateTime.Now.AddDays(-3) },
+                 new StockMovement { ProductId = 5, Quantity = 5, Type = "Saída", Description = "Venda para cliente Maria Oliveira", Date = DateTime.Now.AddDays(-2) },
+                 new StockMovement { ProductId = 5, Quantity = 2, Type = "Saída", Description = "Ajuste de estoque - Produto danificado", Date = DateTime.Now.AddDays(-1) },
+
+                 // Bola de Borracha
+                 new StockMovement { ProductId = 6, Quantity = 20, Type = "Entrada", Description = "Compra de fornecedores", Date = DateTime.Now.AddDays(-15) },
+                 new StockMovement { ProductId = 6, Quantity = 10, Type = "Saída", Description = "Venda para cliente Maria Oliveira", Date = DateTime.Now.AddDays(-14) },
+                 new StockMovement { ProductId = 6, Quantity = 12, Type = "Entrada", Description = "Reposição de estoque", Date = DateTime.Now.AddDays(-12) },
+                 new StockMovement { ProductId = 6, Quantity = 7, Type = "Saída", Description = "Venda para cliente João Silva", Date = DateTime.Now.AddDays(-10) },
+                 new StockMovement { ProductId = 6, Quantity = 3, Type = "Saída", Description = "Ajuste de estoque - Produto danificado", Date = DateTime.Now.AddDays(-8) },
+
+                 // Peluche Donuts
+                 new StockMovement { ProductId = 7, Quantity = 10, Type = "Entrada", Description = "Compra de fornecedores", Date = DateTime.Now.AddDays(-8) },
+                 new StockMovement { ProductId = 7, Quantity = 6, Type = "Saída", Description = "Venda para cliente João Silva", Date = DateTime.Now.AddDays(-7) },
+                 new StockMovement { ProductId = 7, Quantity = 8, Type = "Entrada", Description = "Reposição de estoque", Date = DateTime.Now.AddDays(-6) },
+                 new StockMovement { ProductId = 7, Quantity = 5, Type = "Saída", Description = "Venda para cliente Maria Oliveira", Date = DateTime.Now.AddDays(-5) },
+                 new StockMovement { ProductId = 7, Quantity = 2, Type = "Saída", Description = "Ajuste de estoque - Produto danificado", Date = DateTime.Now.AddDays(-4) },
+
+                 // Tiras de Carne
+                 new StockMovement { ProductId = 8, Quantity = 15, Type = "Entrada", Description = "Compra de fornecedores", Date = DateTime.Now.AddDays(-3) },
+                 new StockMovement { ProductId = 8, Quantity = 5, Type = "Saída", Description = "Venda para cliente Maria Oliveira", Date = DateTime.Now.AddDays(-2) },
+                 new StockMovement { ProductId = 8, Quantity = 7, Type = "Entrada", Description = "Reposição de estoque", Date = DateTime.Now.AddDays(-1) },
+                 new StockMovement { ProductId = 8, Quantity = 3, Type = "Saída", Description = "Venda para cliente João Silva", Date = DateTime.Now.AddDays(0) },
+                 new StockMovement { ProductId = 8, Quantity = 1, Type = "Saída", Description = "Ajuste de estoque - Produto vencido", Date = DateTime.Now.AddDays(1) },
+
+                 // Stick Dentário
+                 new StockMovement { ProductId = 9, Quantity = 20, Type = "Entrada", Description = "Compra de fornecedores", Date = DateTime.Now.AddDays(-5) },
+                 new StockMovement { ProductId = 9, Quantity = 10, Type = "Saída", Description = "Venda para cliente João Silva", Date = DateTime.Now.AddDays(-4) },
+                 new StockMovement { ProductId = 9, Quantity = 12, Type = "Entrada", Description = "Reposição de estoque", Date = DateTime.Now.AddDays(-3) },
+                 new StockMovement { ProductId = 9, Quantity = 7, Type = "Saída", Description = "Venda para cliente Maria Oliveira", Date = DateTime.Now.AddDays(-2) },
+                 new StockMovement { ProductId = 9, Quantity = 3, Type = "Saída", Description = "Ajuste de estoque - Produto vencido", Date = DateTime.Now.AddDays(-1) },
+
+                 // Champô
+                 new StockMovement { ProductId = 14, Quantity = 10, Type = "Entrada", Description = "Compra de fornecedores", Date = DateTime.Now.AddDays(-15) },
+                 new StockMovement { ProductId = 14, Quantity = 5, Type = "Saída", Description = "Venda para cliente João Silva", Date = DateTime.Now.AddDays(-12) },
+                 new StockMovement { ProductId = 14, Quantity = 8, Type = "Entrada", Description = "Reposição de estoque", Date = DateTime.Now.AddDays(-9) },
+                 new StockMovement { ProductId = 14, Quantity = 3, Type = "Saída", Description = "Venda para cliente Maria Oliveira", Date = DateTime.Now.AddDays(-6) },
+                 new StockMovement { ProductId = 14, Quantity = 2, Type = "Saída", Description = "Ajuste de estoque - Produto danificado", Date = DateTime.Now.AddDays(-3) },
+
+                 // Alicate Unhas
+                 new StockMovement { ProductId = 15, Quantity = 20, Type = "Entrada", Description = "Compra de fornecedores", Date = DateTime.Now.AddDays(-10) },
+                 new StockMovement { ProductId = 15, Quantity = 12, Type = "Saída", Description = "Venda para cliente Maria Oliveira", Date = DateTime.Now.AddDays(-8) },
+                 new StockMovement { ProductId = 15, Quantity = 15, Type = "Entrada", Description = "Reposição de estoque", Date = DateTime.Now.AddDays(-6) },
+                 new StockMovement { ProductId = 15, Quantity = 7, Type = "Saída", Description = "Venda para cliente João Silva", Date = DateTime.Now.AddDays(-4) },
+                 new StockMovement { ProductId = 15, Quantity = 3, Type = "Saída", Description = "Ajuste de estoque - Produto danificado", Date = DateTime.Now.AddDays(-2) },
+
+                 // Coleira Repelente
+                 new StockMovement { ProductId = 16, Quantity = 15, Type = "Entrada", Description = "Compra de fornecedores", Date = DateTime.Now.AddDays(-7) },
+                 new StockMovement { ProductId = 16, Quantity = 8, Type = "Saída", Description = "Venda para cliente João Silva", Date = DateTime.Now.AddDays(-6) },
+                 new StockMovement { ProductId = 16, Quantity = 10, Type = "Entrada", Description = "Reposição de estoque", Date = DateTime.Now.AddDays(-4) },
+                 new StockMovement { ProductId = 16, Quantity = 6, Type = "Saída", Description = "Venda para cliente Maria Oliveira", Date = DateTime.Now.AddDays(-3) },
+                 new StockMovement { ProductId = 16, Quantity = 4, Type = "Saída", Description = "Ajuste de estoque - Produto vencido", Date = DateTime.Now.AddDays(-1) },
             };
 
 

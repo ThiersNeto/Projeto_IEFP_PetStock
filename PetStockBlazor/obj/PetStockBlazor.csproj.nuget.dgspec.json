@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\DELL\\Source\\Repos\\Projeto_IEFP_PetStock\\PetStockBlazor\\PetStockBlazor.csproj": {}
+    "C:\\Users\\DELL\\source\\repos\\Projeto_IEFP_PetStock_Dev\\Projeto_IEFP_PetStock\\PetStockBlazor\\PetStockBlazor.csproj": {}
   },
   "projects": {
-    "C:\\Users\\DELL\\Source\\Repos\\Projeto_IEFP_PetStock\\PetStockBlazor\\PetStockBlazor.csproj": {
+    "C:\\Users\\DELL\\source\\repos\\Projeto_IEFP_PetStock_Dev\\Projeto_IEFP_PetStock\\PetStockBlazor\\PetStockBlazor.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\DELL\\Source\\Repos\\Projeto_IEFP_PetStock\\PetStockBlazor\\PetStockBlazor.csproj",
+        "projectUniqueName": "C:\\Users\\DELL\\source\\repos\\Projeto_IEFP_PetStock_Dev\\Projeto_IEFP_PetStock\\PetStockBlazor\\PetStockBlazor.csproj",
         "projectName": "PetStockBlazor",
-        "projectPath": "C:\\Users\\DELL\\Source\\Repos\\Projeto_IEFP_PetStock\\PetStockBlazor\\PetStockBlazor.csproj",
+        "projectPath": "C:\\Users\\DELL\\source\\repos\\Projeto_IEFP_PetStock_Dev\\Projeto_IEFP_PetStock\\PetStockBlazor\\PetStockBlazor.csproj",
         "packagesPath": "C:\\Users\\DELL\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\DELL\\Source\\Repos\\Projeto_IEFP_PetStock\\PetStockBlazor\\obj\\",
+        "outputPath": "C:\\Users\\DELL\\source\\repos\\Projeto_IEFP_PetStock_Dev\\Projeto_IEFP_PetStock\\PetStockBlazor\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
