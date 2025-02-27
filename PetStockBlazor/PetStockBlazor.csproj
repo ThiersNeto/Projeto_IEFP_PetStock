@@ -19,9 +19,4 @@
     </PackageReference>
   </ItemGroup>
 
-  <ItemGroup>
-    <ProjectReference Include="..\PetStock API\PetStock.WebAPI.csproj" />
-    <ProjectReference Include="..\PetStock.Library\PetStock.Library.csproj" />
-  </ItemGroup>
-
 </Project>

@@ -1,0 +1,110 @@
+﻿@page "/dashboard"
+@using PetStockBlazor.Models
+@using PetStockBlazor.Services
+@inject FakeDataService DataService
+
+<PageTitle>Dashboard - Inventário</PageTitle>
+
+<h3>Dashboard - Inventário</h3>
+
+<div class="container">
+    <h4>Top 5 Categorias com Mais Produtos</h4>
+    <table class="table table-bordered">
+        <thead>
+            <tr>
+                <th>Categoria</th>
+                <th>Quantidade de Produtos</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var category in topCategories)
+            {
+                <tr>
+                    <td>@category.Name</td>
+                    <td>@category.ProductCount</td>
+                </tr>
+            }
+        </tbody>
+    </table>
+
+    <h4>Média de Preço por Categoria</h4>
+    <table class="table table-bordered">
+        <thead>
+            <tr>
+                <th>Categoria</th>
+                <th>Média de Preço</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var category in categoryAveragePrice)
+            {
+                <tr>
+                    <td>@category.Name</td>
+                    <td>R$ @category.AveragePrice.ToString("F2")</td>
+                </tr>
+            }
+        </tbody>
+    </table>
+
+    <h4>Valor Total do Estoque por Categoria</h4>
+    <table class="table table-bordered">
+        <thead>
+            <tr>
+                <th>Categoria</th>
+                <th>Valor do Estoque</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var category in stockValueByCategory)
+            {
+                <tr>
+                    <td>@category.Name</td>
+                    <td>R$ @category.StockValue.ToString("F2")</td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>
+
+@code {
+    private List<CategoryWithProductCount> topCategories = new();
+    private List<CategoryWithAveragePrice> categoryAveragePrice = new();
+    private List<CategoryWithStockValue> stockValueByCategory = new();
+
+    protected override void OnInitialized()
+    {
+        
+        topCategories = DataService.GetCategories()
+            .Select(category => new CategoryWithProductCount
+                {
+                    Name = category.Name,
+                    ProductCount = DataService.GetProducts().Count(p => p.CategoryId == category.Id)
+                })
+            .OrderByDescending(category => category.ProductCount)
+            .Take(5)
+            .ToList();
+
+        
+        categoryAveragePrice = DataService.GetCategories()
+            .Select(category => new CategoryWithAveragePrice
+                {
+                    Name = category.Name,
+                    AveragePrice = DataService.GetProducts()
+                        .Where(p => p.CategoryId == category.Id)
+                        .Average(p => p.Price)
+                })
+            .ToList();
+
+        
+        stockValueByCategory = DataService.GetCategories()
+            .Select(category => new CategoryWithStockValue
+                {
+                    Name = category.Name,
+                    StockValue = DataService.GetProducts()
+                        .Where(p => p.CategoryId == category.Id)
+                        .Sum(p => p.Price * p.StockQuantity)
+                })
+            .ToList();
+    }
+}
+

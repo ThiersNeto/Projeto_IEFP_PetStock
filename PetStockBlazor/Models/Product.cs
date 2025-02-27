@@ -28,6 +28,8 @@ namespace PetStockBlazor.Models
 
         public string ImageUrl { get; set; } = string.Empty;
 
-        public bool SoftDelete { get; set; } = false;
+        public bool IsDeleted { get; set; } = false;
+
+        public List<StockMovement> StockMovements { get; set; } = new List<StockMovement>();
     }
 }
