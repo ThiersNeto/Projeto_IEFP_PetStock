@@ -5,6 +5,9 @@ namespace PetStockBlazor.Models
 {
     public class Product
     {
+        public string ImagemUrl;
+        public int Quantity;
+
         [Key]
         public int Id { get; set; }
 

@@ -1,0 +1,6 @@
+@PetStock_WebApi_HostAddress = http://localhost:5183
+
+GET {{PetStock_WebApi_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

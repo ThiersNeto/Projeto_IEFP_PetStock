@@ -11,5 +11,7 @@ namespace PetStockBlazor.Models
         public string Name { get; set; } = "";
 
         public bool IsDeleted { get; set; } = false;
+        public int CategoryId { get; set; }
+        public string IconCSS { get; set; }
     }
 }

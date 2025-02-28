@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\DELL\\Source\\Repos\\Projeto_IEFP_PetStock\\PetStockBlazor\\PetStockBlazor.csproj": {}
+    "C:\\Users\\thier\\source\\repos\\PROJETO\\PetStockBlazor\\PetStockBlazor.csproj": {}
   },
   "projects": {
-    "C:\\Users\\DELL\\Source\\Repos\\Projeto_IEFP_PetStock\\PetStockBlazor\\PetStockBlazor.csproj": {
+    "C:\\Users\\thier\\source\\repos\\PROJETO\\PetStockBlazor\\PetStockBlazor.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\DELL\\Source\\Repos\\Projeto_IEFP_PetStock\\PetStockBlazor\\PetStockBlazor.csproj",
+        "projectUniqueName": "C:\\Users\\thier\\source\\repos\\PROJETO\\PetStockBlazor\\PetStockBlazor.csproj",
         "projectName": "PetStockBlazor",
-        "projectPath": "C:\\Users\\DELL\\Source\\Repos\\Projeto_IEFP_PetStock\\PetStockBlazor\\PetStockBlazor.csproj",
-        "packagesPath": "C:\\Users\\DELL\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\DELL\\Source\\Repos\\Projeto_IEFP_PetStock\\PetStockBlazor\\obj\\",
+        "projectPath": "C:\\Users\\thier\\source\\repos\\PROJETO\\PetStockBlazor\\PetStockBlazor.csproj",
+        "packagesPath": "C:\\Users\\thier\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\thier\\source\\repos\\PROJETO\\PetStockBlazor\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\DELL\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\thier\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -45,7 +45,7 @@
           "auditLevel": "low",
           "auditMode": "direct"
         },
-        "SdkAnalysisLevel": "9.0.100"
+        "SdkAnalysisLevel": "9.0.200"
       },
       "frameworks": {
         "net9.0": {
@@ -91,7 +91,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.102/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.200/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

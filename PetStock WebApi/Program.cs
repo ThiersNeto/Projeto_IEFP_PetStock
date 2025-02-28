@@ -1,10 +1,8 @@
-ï»¿using Microsoft.AspNetCore.Builder;
-using Microsoft.Extensions.DependencyInjection;
 using PetStockBlazor.Services;
 
 var builder = WebApplication.CreateBuilder(args);
 
-// Adiciona os serviÃ§os de controllers e Swagger (para testes)
+// Adiciona os serviços de controllers e Swagger (para testes)
 builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
@@ -12,7 +10,7 @@ builder.Services.AddSwaggerGen();
 // Registra o FakeDataService como singleton
 builder.Services.AddSingleton<FakeDataService>();
 
-// ConfiguraÃ§Ã£o de CORS para permitir acesso da BlazorApp
+// Configuração de CORS para permitir acesso da BlazorApp
 builder.Services.AddCors(options =>
 {
     options.AddPolicy("AllowAll", builder =>
